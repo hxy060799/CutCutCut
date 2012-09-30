@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049E3193161820D400F3EFA2 /* PRFilledPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 049E318D161820D400F3EFA2 /* PRFilledPolygon.m */; };
+		049E3194161820D400F3EFA2 /* PRRatcliffTriangulator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 049E318F161820D400F3EFA2 /* PRRatcliffTriangulator.mm */; };
+		049E3195161820D400F3EFA2 /* triangulate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049E3191161820D400F3EFA2 /* triangulate.cpp */; };
+		049E319F161823E100F3EFA2 /* PolygonSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 049E319E161823E100F3EFA2 /* PolygonSprite.mm */; };
 		04DFAE1B16181D330004638B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DFAE1A16181D330004638B /* QuartzCore.framework */; };
 		04DFAE1D16181D330004638B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DFAE1C16181D330004638B /* OpenGLES.framework */; };
 		04DFAE1F16181D330004638B /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DFAE1E16181D330004638B /* OpenAL.framework */; };
@@ -184,6 +188,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		049E318C161820D400F3EFA2 /* PRFilledPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRFilledPolygon.h; sourceTree = "<group>"; };
+		049E318D161820D400F3EFA2 /* PRFilledPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRFilledPolygon.m; sourceTree = "<group>"; };
+		049E318E161820D400F3EFA2 /* PRRatcliffTriangulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRRatcliffTriangulator.h; sourceTree = "<group>"; };
+		049E318F161820D400F3EFA2 /* PRRatcliffTriangulator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PRRatcliffTriangulator.mm; sourceTree = "<group>"; };
+		049E3190161820D400F3EFA2 /* PRTriangulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTriangulator.h; sourceTree = "<group>"; };
+		049E3191161820D400F3EFA2 /* triangulate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = triangulate.cpp; sourceTree = "<group>"; };
+		049E3192161820D400F3EFA2 /* triangulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangulate.h; sourceTree = "<group>"; };
+		049E319D161823E100F3EFA2 /* PolygonSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonSprite.h; sourceTree = "<group>"; };
+		049E319E161823E100F3EFA2 /* PolygonSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PolygonSprite.mm; sourceTree = "<group>"; };
 		04DFAE1616181D330004638B /* CutCutCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CutCutCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DFAE1A16181D330004638B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04DFAE1C16181D330004638B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -567,6 +580,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		049E318B161820D400F3EFA2 /* PRKit */ = {
+			isa = PBXGroup;
+			children = (
+				049E318C161820D400F3EFA2 /* PRFilledPolygon.h */,
+				049E318D161820D400F3EFA2 /* PRFilledPolygon.m */,
+				049E318E161820D400F3EFA2 /* PRRatcliffTriangulator.h */,
+				049E318F161820D400F3EFA2 /* PRRatcliffTriangulator.mm */,
+				049E3190161820D400F3EFA2 /* PRTriangulator.h */,
+				049E3191161820D400F3EFA2 /* triangulate.cpp */,
+				049E3192161820D400F3EFA2 /* triangulate.h */,
+			);
+			path = PRKit;
+			sourceTree = "<group>";
+		};
 		04DFAE0B16181D330004638B = {
 			isa = PBXGroup;
 			children = (
@@ -613,6 +640,8 @@
 				04DFB04116181D3A0004638B /* GLES-Render.mm */,
 				04DFB04316181D3A0004638B /* PhysicsSprite.h */,
 				04DFB04416181D3A0004638B /* PhysicsSprite.mm */,
+				049E319D161823E100F3EFA2 /* PolygonSprite.h */,
+				049E319E161823E100F3EFA2 /* PolygonSprite.mm */,
 				04DFAE2D16181D340004638B /* Resources */,
 				04DFAE4716181D340004638B /* libs */,
 				04DFB03316181D390004638B /* Supporting Files */,
@@ -644,6 +673,7 @@
 		04DFAE4716181D340004638B /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				049E318B161820D400F3EFA2 /* PRKit */,
 				04DFAF5E16181D370004638B /* LICENSE_cocos2d.txt */,
 				04DFAF6D16181D370004638B /* LICENSE_CocosDenshion.txt */,
 				04DFAF9F16181D380004638B /* LICENSE_Kazmath.txt */,
@@ -1367,6 +1397,10 @@
 				04DFB03F16181D3A0004638B /* IntroLayer.mm in Sources */,
 				04DFB04216181D3A0004638B /* GLES-Render.mm in Sources */,
 				04DFB04516181D3A0004638B /* PhysicsSprite.mm in Sources */,
+				049E3193161820D400F3EFA2 /* PRFilledPolygon.m in Sources */,
+				049E3194161820D400F3EFA2 /* PRRatcliffTriangulator.mm in Sources */,
+				049E3195161820D400F3EFA2 /* triangulate.cpp in Sources */,
+				049E319F161823E100F3EFA2 /* PolygonSprite.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1472,6 +1506,7 @@
 				04DFB04C16181D3A0004638B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
